@@ -8,7 +8,6 @@ php:
 build_image: shippableimages/ubuntu1204_php:latest
 
 before_install:
-  - setup_ve
   - export PATH=$HOME/.phpenv/bin:$HOME/.phpenv/extensions:$PATH && eval "$(phpenv init -)"
   - phpenv global $SHIPPABLE_PHP_VERSION
   - php --version
