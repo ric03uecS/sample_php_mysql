@@ -6,6 +6,7 @@ php:
 build_image: shippable/minv2:beta
 
 before_install:
+  - setup_ve
   - export PATH=$HOME/.phpenv/bin:$HOME/.phpenv/extensions:$PATH && eval "$(phpenv init -)"
   - phpenv global $SHIPPABLE_PHP_VERSION
   - php --version
