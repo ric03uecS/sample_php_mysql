@@ -3,7 +3,9 @@ language: php
 php: 
   - 5.4
 
-build_image: shippable/minv2:beta
+#build_image: shippable/minv2:beta
+
+build_image: shippableimages/ubuntu1204_php:latest
 
 before_install:
   - setup_ve
